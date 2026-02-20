@@ -10,8 +10,8 @@ body{
 .navigation{
 display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-left: 156px;
+    gap: 30px;
 }
 .title-addres, .title-traditional, .title-recipe{
     font-family: "Italiana", sans-serif;
@@ -22,6 +22,8 @@ ul{
 }
 .nav-link{
     color: #FFFFFF;
+    
+    
 }
 h1, h2, h3, h4{
     margin-top: 0;
@@ -39,16 +41,16 @@ section{
 
 }
 .title-main{
-width: 561px;
-height:170px ;
+width: 661px;
+height:70px ;
 margin-top: 71px;
 margin-left: 146px;
 }
 .title-text{
 width: 570.25px;
-height: 200px;
-margin-top: 22px;
-margin-left: 160px;
+height: 100px;
+margin-left: 150px;
+margin-top: 20px;
 
 }
 .title-btn{
@@ -56,11 +58,12 @@ width: 139px;
 height: 34px;
 background-color: #B47B48;
 border-radius: 17px;
-margin-top: 33px;
-margin-left: 191px;
+margin-left: 151px;
+margin-top: 20px;
 }
 .list-coockies {
 display: flex;
+margin-top: 150px;
 }
 .list-coockies-first{
 background-color:#272727 ;
@@ -101,12 +104,13 @@ height: 34px;
 .first-photo{
     background-image: url(./img2/img\(1\).jpg);
     width: 1431px;
-    height: 1023px;
+    height: 800px;
 }
 .second-photo{
     background-image: url(./img2/photo_2022-06-23_21-45-36\ 1.jpg);
 width: 1440px;
 height: 580px;
+background-repeat: no-repeat;
 }
 .list-coockies-first, .list-coockies-second, .list-coockies-third{
     display: flex;
@@ -237,10 +241,12 @@ height: 114px;
 top: 2705px;
 left: 165px;
 margin-left: 165px;
+margin-top: 0px;
 }
 .list-traditional{
 display: flex;
 justify-content: space-between;
+align-items: flex-end;
 }
 .traditional-text-first{
 width: 188px;
@@ -270,10 +276,12 @@ height: 704px;
 width: 129px;
 height: 57px;
 margin-top: 50px;
+margin-left: 20px;
 }
 .placement{
     width: 535px ;
     height: 487px;
+    margin-left: 20px;
 }
 .title-address-second{
 width: 175px;
@@ -306,10 +314,10 @@ margin-top: 100px;
     width: 199px;
     height: 58px;
 }
-.footer-section-first h2{
-display: flex;
-justify-content: flex-start;
-align-items: flex-end;
+.footer-section-first {
+ display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
 }
 .footer-main-title{
 width: 322px;
@@ -319,13 +327,14 @@ height: 96px;
 width: 174px;
 height: 24px;
 }
-.footer-section-second{
+.footer-list-first, .footer-list-second, .footer-list-third li{
+     margin-bottom: 10px;
   
 }
 .footer-list-first, .footer-list-second, .footer-list-third{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+     list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .footer-title-first, .footer-title-second, .footer-title-third{
     display: flex;
